@@ -4,6 +4,8 @@ class SquareDecomposer {
 
     // TODO: Complete the following function
     fun decomposeNumber(number: Int): Array<Int>? {
-        throw NotImplementedError("Not implemented")
+        if(number < 0) return null
+
+        return arrayOf(1)
     }
 }
