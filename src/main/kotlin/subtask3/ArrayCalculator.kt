@@ -28,12 +28,10 @@ class ArrayCalculator {
             items.removeAt(0)
         }
 
-        var pairsProduct = mutableListOf<Int>()
-
+        val pairsProduct = mutableListOf<Int>()
         for(itemIndex in items.indices){
             if(itemIndex+1 != items.size)
-                if(items[itemIndex] * items[itemIndex+1] > 0)
-                    pairsProduct.add(items[itemIndex] * items[itemIndex+1])
+                pairsProduct.add(items[itemIndex] * items[itemIndex+1])
         }
 
         pairsProduct.sortDescending()
