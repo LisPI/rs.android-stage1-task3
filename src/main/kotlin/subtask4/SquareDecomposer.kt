@@ -9,7 +9,7 @@ class SquareDecomposer {
         if(answerString == "")
             return null
 
-        return answerString.split( " ", "end").filter { it != "" }.map { it.toInt() }.toTypedArray().reversed().toTypedArray()  //just for fun
+        return answerString.split( " ", "end").filter { it != "" }.map { it.toInt() }.reversed().toTypedArray()  //just for fun
     }
 
     private fun decomposeRecourse(n : Long, number : Long, str : String) : String{
